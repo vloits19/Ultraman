@@ -1,0 +1,112 @@
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\App.tsx[24m[0m
+[0m  [2m39:16[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\App.tsx:39:16[0m
+[0m  37 |   const stars = useMemo(() => {[0m
+[0m  38 |     return Array.from({ length: 30 }).map(() => ({[0m
+[0m> 39 |       left: `${Math.random() * 100}%`,[0m
+[0m     |                ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  40 |       top: `${Math.random() * 100}%`,[0m
+[0m  41 |       duration: 2 + Math.random() * 2,[0m
+[0m  42 |       delay: Math.random() * 2,  [2mreact-hooks/purity[22m[0m
+[0m  [2m40:15[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\App.tsx:40:15[0m
+[0m  38 |     return Array.from({ length: 30 }).map(() => ({[0m
+[0m  39 |       left: `${Math.random() * 100}%`,[0m
+[0m> 40 |       top: `${Math.random() * 100}%`,[0m
+[0m     |               ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  41 |       duration: 2 + Math.random() * 2,[0m
+[0m  42 |       delay: Math.random() * 2,[0m
+[0m  43 |     }));                          [2mreact-hooks/purity[22m[0m
+[0m  [2m41:21[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\App.tsx:41:21[0m
+[0m  39 |       left: `${Math.random() * 100}%`,[0m
+[0m  40 |       top: `${Math.random() * 100}%`,[0m
+[0m> 41 |       duration: 2 + Math.random() * 2,[0m
+[0m     |                     ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  42 |       delay: Math.random() * 2,[0m
+[0m  43 |     }));[0m
+[0m  44 |   }, []);                                                             [2mreact-hooks/purity[22m[0m
+[0m  [2m42:14[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\App.tsx:42:14[0m
+[0m  40 |       top: `${Math.random() * 100}%`,[0m
+[0m  41 |       duration: 2 + Math.random() * 2,[0m
+[0m> 42 |       delay: Math.random() * 2,[0m
+[0m     |              ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  43 |     }));[0m
+[0m  44 |   }, []);[0m
+[0m  45 |                                                                                                           [2mreact-hooks/purity[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\UltraCard.tsx[24m[0m
+[0m  [2m180:29[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\components\UltraCard.tsx:180:29[0m
+[0m  178 |               animate={{ [0m
+[0m  179 |                 opacity: 0,[0m
+[0m> 180 |                 x: `${50 + (Math.random() - 0.5) * 100}%`,[0m
+[0m      |                             ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  181 |                 y: `${50 + (Math.random() - 0.5) * 100}%`,[0m
+[0m  182 |                 scale: 0[0m
+[0m  183 |               }}                                   [2mreact-hooks/purity[22m[0m
+[0m  [2m181:29[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\components\UltraCard.tsx:181:29[0m
+[0m  179 |                 opacity: 0,[0m
+[0m  180 |                 x: `${50 + (Math.random() - 0.5) * 100}%`,[0m
+[0m> 181 |                 y: `${50 + (Math.random() - 0.5) * 100}%`,[0m
+[0m      |                             ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  182 |                 scale: 0[0m
+[0m  183 |               }}[0m
+[0m  184 |               transition={{ duration: 1, delay: i * 0.1 }}  [2mreact-hooks/purity[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\badge.tsx[24m[0m
+[0m  [2m46:17[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\button-group.tsx[24m[0m
+[0m  [2m82:3[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\button.tsx[24m[0m
+[0m  [2m62:18[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\form.tsx[24m[0m
+[0m  [2m159:3[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\navigation-menu.tsx[24m[0m
+[0m  [2m167:3[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\sidebar.tsx[24m[0m
+[0m  [2m611:26[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mD:\0rdm\Ultra\src\components\ui\sidebar.tsx:611:26[0m
+[0m  609 |   // Random width between 50 to 90%.[0m
+[0m  610 |   const width = React.useMemo(() => {[0m
+[0m> 611 |     return `${Math.floor(Math.random() * 40) + 50}%`[0m
+[0m      |                          ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  612 |   }, [])[0m
+[0m  613 |[0m
+[0m  614 |   return (  [2mreact-hooks/purity[22m[0m
+[0m  [2m725:3[22m   [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[4mD:\0rdm\Ultra\src\components\ui\toggle.tsx[24m[0m
+[0m  [2m45:18[22m  [31merror[39m  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  [2mreact-refresh/only-export-components[22m[0m
+[0m[0m
+[0m[31m[1m✖ 14 problems (14 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
