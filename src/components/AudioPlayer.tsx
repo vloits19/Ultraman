@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { Play, Pause, SkipForward, Repeat, Repeat1, Volume2, VolumeX } from 'lucide-react';
 
-import ost_blazar from '@/assest/ost/ost_blazar.mp3';
-import ost_mebius from '@/assest/ost/ost_mebius.mp3';
-import ost_orb from '@/assest/ost/ost_orb.mp3';
-import ost_tiga from '@/assest/ost/ost_tiga.mp3';
-import ost_x from '@/assest/ost/ost_x.mp3';
+import ost_blazar from '@/assets/ost/ost_blazar.mp3';
+import ost_mebius from '@/assets/ost/ost_mebius.mp3';
+import ost_orb from '@/assets/ost/ost_orb.mp3';
+import ost_tiga from '@/assets/ost/ost_tiga.mp3';
+import ost_x from '@/assets/ost/ost_x.mp3';
 
 const PLAYLIST = [
   { title: "Ultraman Tiga OST", src: ost_tiga },
