@@ -12,7 +12,7 @@ const FILE_NAME_OVERRIDES: Record<string, string> = {
 export const getImageUrl = (ultra: Ultraman): string => {
   // Handle special cases and hidden ultra
   if (ultra.id === 99) {
-    return '/src/assest/img/heisei/UltramanNoa.png'; // Assuming Noa is in heisei
+    return '/src/assets/img/heisei/UltramanNoa.png'; // Assuming Noa is in heisei
   }
 
   // Formatting Era to match folder names (e.g., 'New Generation' -> 'new gen')
@@ -34,5 +34,5 @@ export const getImageUrl = (ultra: Ultraman): string => {
   // Check for special filename overrides, otherwise use standard naming
   const fileName = FILE_NAME_OVERRIDES[ultra.name] || ultra.name.replace(/\s+/g, '') + '.png';
 
-  return `/src/assest/img/${folderName}/${fileName}`;
+  return `/src/assets/img/${folderName}/${fileName}`;
 };
