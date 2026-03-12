@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap } from 'lucide-react';
-import henshinSound from '@/assest/sound/Henshin.mp3';
+import henshinSound from '@/assets/sound/Henshin.mp3';
 interface BetaCapsuleProps {
   onTransform: () => void;
 }
